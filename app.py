@@ -116,6 +116,7 @@ def profile_info_linkdein(FirstName,LastName,EmailID,Password):
     d={'Name':Name,'Location':Location,'Followers':Followers,"About":About}
     ## Creating data frame
     data = pd.DataFrame(d)
+    data.to_csv('linkdein_profile_info.csv')
     data
 
 
