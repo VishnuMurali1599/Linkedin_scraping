@@ -21,6 +21,7 @@ Before using the scraper, make sure you have the following installed:
 - Python 3.x
 - ChromeDriver (compatible with your Chrome browser version)
 - Required Python packages (specified in requirements.txt)
+- Please enter your linkdein id and password
 
 ## Setup
 
@@ -31,8 +32,10 @@ Before using the scraper, make sure you have the following installed:
 
 2. Install all the requirements
 
+    ```cmd
     pip install -r requiremets.txt
 
 3. Run the python code
 
+    ```cmd
     streamlit run app.py
