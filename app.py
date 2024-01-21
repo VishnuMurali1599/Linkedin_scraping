@@ -23,7 +23,8 @@ Location=[]
 Followers =[]
 About = []
 def profile_info_linkdein(FirstName,LastName,EmailID,Password):
-    s=Service("C:/Users/DELL/Downloads/Dataset/chromedriver-win64/chromedriver.exe")
+    #s=Service("C:/Users/DELL/Downloads/Dataset/chromedriver-win64/chromedriver.exe")
+    s=Service("chromedriver.exe")
     logging.info("Chrome driver path is executed")
     driver = webdriver.Chrome(service = s)
     logging.info("Hitting the linkdein url using selenium")
