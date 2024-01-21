@@ -14,6 +14,10 @@ This project is a LinkedIn Profile Scraper that extracts information about peopl
 - **About:** Collects information about the user's background/intresr.
 - **location:** Retrieves the user's locations.
 
+- **Script1:** test.py
+- **Script2:** app.py
+- Logging and Exception handling is also done
+
 ## Prerequisites
 
 Before using the scraper, make sure you have the following installed:

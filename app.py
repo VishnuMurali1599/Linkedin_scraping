@@ -1,3 +1,6 @@
+"""Script 2 that only uses selenium for automation and beautiful soup for scrapping
+along with web api (Streamlit)"""
+
 # Importing Necessary Libraries
 from bs4 import BeautifulSoup
 import requests
