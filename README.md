@@ -6,6 +6,12 @@ This project is a LinkedIn Profile Scraper that extracts information about peopl
 
 **Note:** Scraping LinkedIn may violate LinkedIn's terms of service. Ensure that you are aware of and compliant with LinkedIn's policies before using this scraper.
 
+## Scripts
+
+- **Script1:** test.py
+- **Script2:** app.py
+- Logging and Exception handling is also done
+
 ## Features
 
 - **Profile Information:** Extracts basic profile information, including name, headline, location, and profile URL.
@@ -13,10 +19,6 @@ This project is a LinkedIn Profile Scraper that extracts information about peopl
 - **followers:** Gathers details about the user's followers.
 - **About:** Collects information about the user's background/intresr.
 - **location:** Retrieves the user's locations.
-
-- **Script1:** test.py
-- **Script2:** app.py
-- Logging and Exception handling is also done
 
 ## Prerequisites
 
