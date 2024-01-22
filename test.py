@@ -1,4 +1,4 @@
-## Script 1 that only uses selenium for automation and beautiful soup for scrapping.
+"""Script 1 that only uses selenium for automation and beautiful soup for scrapping."""
 
 # Importing Necessary Libraries
 from bs4 import BeautifulSoup
@@ -12,8 +12,10 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
-firstname = input()
-lastname = input()
+firstname = input("Enter the first name :")
+lastname = input("Enter the last name :")
+email_id = input("Enter the Linkdein id :")
+password = input("Enter the linkdein password :")
 s=Service("C:/Users/DELL/Downloads/Dataset/chromedriver-win64/chromedriver.exe")
 driver = webdriver.Chrome(service = s)
 link = f"https://www.linkedin.com/search/results/people/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAACtRLZMB7ymcym6TQImChrlOhl4BfCxYffw&keywords={firstname}%20{lastname}&origin=SWITCH_SEARCH_VERTICAL&sid=L9b"
@@ -23,11 +25,11 @@ driver.find_element_by_xpath("""/html/body/div[1]/main/div/p/a""").click()
 time.sleep(2)
 
 user_name = driver.find_element_by_xpath("""/html/body/div/main/div[2]/div[1]/form/div[1]/input""")
-user_name.send_keys("vishnumurali880@gmail.com")
+user_name.send_keys(email_id)
 user_name.send_keys(Keys.ENTER)
 
 password = driver.find_element_by_xpath("""/html/body/div/main/div[2]/div[1]/form/div[2]/input""")
-password.send_keys("########")
+password.send_keys(password)
 password.send_keys(Keys.ENTER)
 
 
